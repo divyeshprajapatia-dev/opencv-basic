@@ -1,9 +1,9 @@
 import cv2 
 
-image = cv2.imread("test3.jpeg")
+image = cv2.imread("test_image/test3.jpeg")
 gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
 
-_, binary = cv2.threshold(gray, 127, 255,cv2.THRESH_BINARY)
+_, binary = cv2.threshold(gray,150, 255,cv2.THRESH_BINARY) #if value  is > 150 then is should do 255 mean white else do 0 black
 
 print("gray shape:",gray.shape)
 print("binary shape:",binary.shape)

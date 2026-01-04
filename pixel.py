@@ -1,6 +1,6 @@
 import cv2
 
-image = cv2.imread("test3.jpeg")
+image = cv2.imread("test_image/test3.jpeg")
 gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
 
 pixel_value = gray[200,200]
